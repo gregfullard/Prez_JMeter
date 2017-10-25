@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The Magic of Automated Performance Testing</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>The Magic of Automated Performance Testing</h2>
+					<p>(https://github.com/gregfullard/Prez_JMeter)</p>
+				</section>
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Test Tools Landscape</li>
+						<li>Installing JMeter</li>
+						<li>JMeter Demo</li>
+						<li>Q&A</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Test Tools Landscape</h2>
+						<ul>
+							<li>Test Requirements Management Tools</li>
+							<li>Test Automation Frameworks</li>
+							<li>Defect Tracking Tools</li>
+							<li>Functional API Testing Tools</li>
+							<li>Functional UI Testing Tools</li>
+							<li>Performance Testing Tools</li>
+							<li>Test Reporting Tools</li>
+							<li>Unit Testing Tools</li>
+							<li>Integration Testing Tools</li>
+							<li>Test Data Generation Tools</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Test Requirements Management</h2>
+						<ul>
+							<li>Cucumber</li>
+							<li>Fitnesse</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Test Automation Frameworks</h2>
+						<ul>
+							<li>Cucumber</li>
+							<li>Fitnesse</li>
+							<li>Robot Framework</li>
+							<li>Spock Framework</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Defect Tracking</h2>
+						<ul>
+							<li>JIRA</li>
+							<li>BugZilla</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Functional API Testing</h2>
+						<ul>
+							<li>SOAPUI</li>
+							<li>Postman</li>
+							<li>Chrome Advanced REST Client (ARC)</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Functional UI Testing</h2>
+						<ul>
+							<li>Selenium</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Performance Testing</h2>
+						<ul>
+							<li>The Grinder</li>
+							<li>Gatling</li>
+							<li>Tsung</li>
+							<li>JMeter</li>
+							<li>BlazeMeter</li>
+							<li>LoadRunner</li>
+						</ul>
+						<p>https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use</p>
+						<p>http://www.opensourcetesting.org/category/performance/</p>
+					</section>
+					<section>
+						<h2>Test Reporting</h2>
+						<ul>
+							<li>TBD :: Tool 1</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Unit Testing</h2>
+						<ul>
+							<li>JUnit</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Integration Testing</h2>
+						<ul>
+							<li>Arquilian</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Test Data Generation Tools</h2>
+						<ul>
+							<li>https://www.generatedata.com/</li>
+							<li>TBD...</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Installing JMeter</h2>
+						<ol>
+							<li>Requires Java 7+</li>
+							<li>No installation, just download and run the shell script</li>
+							<li>http://jmeter.apache.org/download_jmeter.cgi</li>
+						</ol>
+				</section>
+				<section>
+					<section>
+						<h2>JMeter Demo</h2>
+						<img src="assets/logo.svg" />
+					</section>
+					<section>
+						<p>~/Software/Jmeter/apache-jmeter-3.1/bin/jmeter -n -t basic_http.jmx -l results.jtl
+</p>
+					</section>
+				</section>
+				<section>
+					<h1>Q & A</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
